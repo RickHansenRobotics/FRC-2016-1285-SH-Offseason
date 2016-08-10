@@ -12,7 +12,7 @@ public class DriveForward extends Command {
 	private double timeOut;
 	private double speed;
 	
-    public DriveForward(double distance, double timeOut) {
+    public DriveForward(double distance, double timeOut, double speed) {
     	this.distance = distance;
     	this.timeOut = timeOut;
     	this.speed = speed;

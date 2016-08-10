@@ -8,14 +8,12 @@ import org.usfirst.frc.team1285.robot.Robot;
  */
 public class DriveTurn extends Command {
 	
-	private double distance;
 	private double timeOut;
 	private double leftSpeed;
 	private double rightSpeed;
-	private double angle;
+	private double angle;	
 	
-    public DriveTurn(double distance, double timeOut, double leftSpeed, double rightSpeed, double angle) {
-    	this.distance = distance;
+    public DriveTurn(double timeOut, double leftSpeed, double rightSpeed, double angle) {
     	this.timeOut = timeOut;
     	this.leftSpeed = leftSpeed;
     	this.rightSpeed = rightSpeed;
@@ -35,7 +33,7 @@ public class DriveTurn extends Command {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-    	Robot.drive.driveTurn(distance, timeOut, leftSpeed, rightSpeed, angle);
+    	Robot.drive.driveTurn(timeOut, leftSpeed, rightSpeed, angle);
     }
 
     // Make this return true when this Command no longer needs to run execute()

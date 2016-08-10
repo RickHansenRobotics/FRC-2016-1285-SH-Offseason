@@ -193,7 +193,7 @@ public class Drivetrain extends Subsystem {
 			
 		}
 
-		public void driveTurn(double distance, double timeOut, double leftSpeed, double rightSpeed, double angle) {
+		public void driveTurn(double timeOut, double leftSpeed, double rightSpeed, double angle) {
 			// TODO Auto-generated method stub
 			
 		}
